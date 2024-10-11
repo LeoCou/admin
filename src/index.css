@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1F4A63;
+  --color-secondary: #B4C740;
+}
+
+body {
+  background-color: #f3f4f6;
+}
+
+.btn-primary {
+  @apply bg-[#1F4A63] text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-[#B4C740] text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors;
+}
+
+.input-primary {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#B4C740] focus:ring focus:ring-[#B4C740] focus:ring-opacity-50;
+}
